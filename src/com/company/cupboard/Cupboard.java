@@ -1,15 +1,19 @@
-package com.company;
+package com.company.cupboard;
+
+import com.company.factory.Factory;
+import com.company.product.Product;
+import com.company.product.ProductType;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-public class Cupboard implements Factory{
+public class Cupboard implements Factory {
     private ArrayList<Product> products = new ArrayList<>();
     private final int id = i++;
     private static int i = 0;
-    private int capacity = 4;
+    private int capacity = 5;
 
     public int getId() {
         return id;
