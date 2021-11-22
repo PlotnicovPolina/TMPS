@@ -1,10 +1,10 @@
-package com.company.fridge;
+package cupboard;
 
-import com.company.product.Product;
+import product.Product;
 
 import java.util.Date;
 
-public class Seafood implements Product {
+public class Sweets implements Product {
     private final int  id = i++;
     private final String name;
     private final Date expirationDate;
@@ -12,7 +12,7 @@ public class Seafood implements Product {
     private int idOfSpace;
     private static int i = 0;
 
-    public Seafood(Builder builder) {
+    public Sweets(Builder builder) {
         this.name = builder.name;
         this.expirationDate = builder.expirationDate;
         this.price = builder.price;
@@ -41,15 +41,15 @@ public class Seafood implements Product {
 
     public void getProduct(){
         if (idOfSpace == -1)
-            System.out.println("Seafood ID: " + id + "\nName: " + name + "\nExpiration Date: " + expirationDate + "\nPrice: " + price );
+            System.out.println("Sweet ID: " + id + "\nName: " + name + "\nExpiration Date: " + expirationDate + "\nPrice: " + price );
         else
-            System.out.println("Seafood ID: " + id + "\nName: " + name + "\nExpiration Date: " + expirationDate + "\nPrice: " + price + "\nSpace ID: " + idOfSpace );
+            System.out.println("Sweet ID: " + id + "\nName: " + name + "\nExpiration Date: " + expirationDate + "\nPrice: " + price + "\nSpace ID: " + idOfSpace );
     }
 
     static class Builder{
-        private final String name;
-        private final Date expirationDate;
-        private final float price;
+        private String name;
+        private Date expirationDate;
+        private float price;
         private int idOfSpace = -1;
 
         public Builder(String name, Date expirationDate, float price) {
@@ -63,8 +63,9 @@ public class Seafood implements Product {
             return this;
         }
 
-        public Seafood build(){
-            return new Seafood(this);
+        public Sweets build(){
+            return new Sweets(this);
         }
     }
+
 }

@@ -1,7 +1,7 @@
-package com.company.factory;
+package factory;
 
-import com.company.cupboard.Cupboard;
-import com.company.fridge.Fridge;
+import cupboard.Cupboard;
+import fridge.Fridge;
 
 public class Manager {
 

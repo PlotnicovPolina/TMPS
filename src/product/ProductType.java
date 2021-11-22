@@ -1,4 +1,4 @@
-package com.company.product;
+package product;
 
 public enum ProductType {
     MilkProduct,

@@ -1,10 +1,10 @@
-package com.company.cupboard;
+package fridge;
 
-import com.company.product.Product;
+import product.Product;
 
 import java.util.Date;
 
-public class Porridge implements Product {
+public class Drinks implements Product {
     private final int  id = i++;
     private final String name;
     private final Date expirationDate;
@@ -12,7 +12,7 @@ public class Porridge implements Product {
     private int idOfSpace;
     private static int i = 0;
 
-    public Porridge(Builder builder) {
+    public Drinks(Builder builder) {
         this.name = builder.name;
         this.expirationDate = builder.expirationDate;
         this.price = builder.price;
@@ -41,9 +41,9 @@ public class Porridge implements Product {
 
     public void getProduct(){
         if (idOfSpace == -1)
-            System.out.println("Porridge ID: " + id + "\nName: " + name + "\nExpiration Date: " + expirationDate + "\nPrice: " + price );
+            System.out.println("Drink ID: " + id + "\nName: " + name + "\nExpiration Date: " + expirationDate + "\nPrice: " + price );
         else
-            System.out.println("Porridge ID: " + id + "\nName: " + name + "\nExpiration Date: " + expirationDate + "\nPrice: " + price + "\nSpace ID: " + idOfSpace );
+            System.out.println("Drink ID: " + id + "\nName: " + name + "\nExpiration Date: " + expirationDate + "\nPrice: " + price + "\nSpace ID: " + idOfSpace );
     }
 
     static class Builder{
@@ -63,9 +63,8 @@ public class Porridge implements Product {
             return this;
         }
 
-        public Porridge build(){
-            return new Porridge(this);
+        public Drinks build(){
+            return new Drinks(this);
         }
     }
-
 }

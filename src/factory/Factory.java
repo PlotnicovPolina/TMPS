@@ -1,7 +1,7 @@
-package com.company.factory;
+package factory;
 
-import com.company.product.Product;
-import com.company.product.ProductType;
+import product.Product;
+import product.ProductType;
 
 import java.util.ArrayList;
 import java.util.Date;

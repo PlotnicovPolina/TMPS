@@ -1,15 +1,15 @@
-package com.company.fridge;
+package cupboard;
 
-import com.company.factory.Factory;
-import com.company.product.Product;
-import com.company.product.ProductType;
+import factory.Factory;
+import product.Product;
+import product.ProductType;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-public class Fridge implements Factory {
+public class Cupboard implements Factory {
     private ArrayList<Product> products = new ArrayList<>();
     private final int id = i++;
     private static int i = 0;
@@ -27,7 +27,6 @@ public class Fridge implements Factory {
         return products;
     }
 
-    @Override
     public Date randomDate() {
 
         GregorianCalendar gc = new GregorianCalendar();
@@ -55,35 +54,36 @@ public class Fridge implements Factory {
         return names[(int) (Math.random()* (names.length-1))];
     }
 
-    private Product create(ProductType type) {
-        switch (type) {
-            case MilkProduct: {
-                Product milkProduct = new MilkProduct.Builder(randomName(),randomDate(),randomPrice()).setIdOfSpace(id).build();
-                products.add(milkProduct);
+    private Product create (ProductType type){
+        switch (type){
+            case Sweets:{
+                Product sweets = new Sweets.Builder(randomName(),randomDate(),randomPrice()).setIdOfSpace(id).build();
+                products.add(sweets);
                 capacity--;
-                return milkProduct;
+                return  sweets;
             }
-            case Seafood: {
-                Product seafood = new Seafood.Builder(randomName(),randomDate(),randomPrice()).setIdOfSpace(id).build();
-                products.add(seafood);
+            case Porridge:{
+                Product porridge = new Porridge.Builder(randomName(),randomDate(),randomPrice()).setIdOfSpace(id).build();
+                products.add(porridge);
                 capacity--;
-                return seafood;
+                return  porridge;
             }
-            case Drinks: {
-                Product drink = new Drinks.Builder(randomName(),randomDate(),randomPrice()).setIdOfSpace(id).build();
-                products.add(drink);
+            case BakeryProducts:
+            {
+                Product bakeryProducts = new BakeryProducts.Builder(randomName(),randomDate(),randomPrice()).setIdOfSpace(id).build();
+                products.add(bakeryProducts);
                 capacity--;
-                return drink;
+                return  bakeryProducts;
             }
-            default:
-                return null;
+            default: return null;
         }
     }
 
-    public void testCreate(ProductType type) {
-        if (capacity == 0) {
-            System.out.println("The fridge is full of products. We need to create new fridge!\n");
-        } else
+    public void testCreate(ProductType type){
+        if (capacity == 0){
+            System.out.println("The cupboard is full of products. We need to create new cupboard!\n");
+        }
+        else
             create(type);
     }
 }

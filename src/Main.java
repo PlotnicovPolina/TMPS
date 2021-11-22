@@ -1,8 +1,12 @@
-package com.company;
-
-import com.company.factory.Factory;
-import com.company.factory.Manager;
-import com.company.product.ProductType;
+import factory.Factory;
+import factory.Manager;
+import product.ProductType;
+import tool.CashMachine;
+import tool.Computer;
+import tool.Scanner;
+import workers.Accountant;
+import workers.Cashier;
+import workers.Merchandiser;
 
 public class Main {
 
@@ -26,6 +30,18 @@ public class Main {
 
         fridge.showProducts();
         cupboard.showProducts();
+
+        Accountant accountant = new Accountant("Sean", new Computer());
+
+        accountant.action();
+
+        Cashier cashier = new Cashier("Maria", new CashMachine());
+
+        cashier.action();
+
+        Merchandiser merchandiser = new Merchandiser("Juan", new Scanner());
+
+        merchandiser.action();
 
     }
 }

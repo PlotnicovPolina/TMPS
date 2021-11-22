@@ -1,10 +1,10 @@
-package com.company.cupboard;
+package fridge;
 
-import com.company.product.Product;
+import product.Product;
 
 import java.util.Date;
 
-public class BakeryProducts implements Product {
+public class Seafood implements Product {
     private final int  id = i++;
     private final String name;
     private final Date expirationDate;
@@ -12,7 +12,7 @@ public class BakeryProducts implements Product {
     private int idOfSpace;
     private static int i = 0;
 
-    public BakeryProducts(Builder builder) {
+    public Seafood(Builder builder) {
         this.name = builder.name;
         this.expirationDate = builder.expirationDate;
         this.price = builder.price;
@@ -41,9 +41,9 @@ public class BakeryProducts implements Product {
 
     public void getProduct(){
         if (idOfSpace == -1)
-            System.out.println("Bakery Products ID: " + id + "\nName: " + name + "\nExpiration Date: " + expirationDate + "\nPrice: " + price );
+            System.out.println("Seafood ID: " + id + "\nName: " + name + "\nExpiration Date: " + expirationDate + "\nPrice: " + price );
         else
-            System.out.println("Bakery Products ID: " + id + "\nName: " + name + "\nExpiration Date: " + expirationDate + "\nPrice: " + price + "\nSpace ID: " + idOfSpace );
+            System.out.println("Seafood ID: " + id + "\nName: " + name + "\nExpiration Date: " + expirationDate + "\nPrice: " + price + "\nSpace ID: " + idOfSpace );
     }
 
     static class Builder{
@@ -63,8 +63,8 @@ public class BakeryProducts implements Product {
             return this;
         }
 
-        public BakeryProducts build(){
-            return new BakeryProducts(this);
+        public Seafood build(){
+            return new Seafood(this);
         }
     }
 }
