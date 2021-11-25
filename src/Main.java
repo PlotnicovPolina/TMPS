@@ -1,14 +1,6 @@
 import factory.Factory;
 import factory.Manager;
-import person.Unemployed;
 import product.ProductType;
-import tool.CashMachine;
-import tool.Computer;
-import person.workers.Accountant;
-import person.workers.Cashier;
-import person.workers.Worker;
-
-import java.util.ArrayList;
 
 public class Main {
 

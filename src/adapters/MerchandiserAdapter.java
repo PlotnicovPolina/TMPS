@@ -1,7 +1,7 @@
 package adapters;
 
-import person.workers.Merchandiser;
-import person.workers.Worker;
+import worker.Merchandiser;
+import worker.Worker;
 
 public class MerchandiserAdapter extends Worker {
 

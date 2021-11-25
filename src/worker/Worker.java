@@ -1,4 +1,4 @@
-package person.workers;
+package worker;
 
 import tool.Tool;
 

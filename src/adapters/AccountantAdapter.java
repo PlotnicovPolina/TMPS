@@ -1,7 +1,7 @@
 package adapters;
 
-import person.workers.Accountant;
-import person.workers.Worker;
+import worker.Accountant;
+import worker.Worker;
 
 public class AccountantAdapter extends Worker {
 

@@ -1,7 +1,7 @@
 package adapters;
 
-import person.workers.Cashier;
-import person.workers.Worker;
+import worker.Cashier;
+import worker.Worker;
 
 public class CashierAdapter extends Worker {
     private Cashier cashier;

@@ -4,10 +4,10 @@ import adapters.MerchandiserAdapter;
 import tool.CashMachine;
 import tool.Computer;
 import tool.Scanner;
-import person.workers.Accountant;
-import person.workers.Cashier;
-import person.workers.Merchandiser;
-import person.workers.Worker;
+import worker.Accountant;
+import worker.Cashier;
+import worker.Merchandiser;
+import worker.Worker;
 
 public class Facade {
     private Worker accountant;
