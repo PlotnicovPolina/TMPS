@@ -11,12 +11,12 @@
 
 ---
 ## Table of contents:
-* [Introduction](#_cdp:-introduction_)
-* [Implementation](#_cdp:-implementation_)
-* [Results](#_cdp:-results_)
+* [Introduction](#_cdp-introduction_)
+* [Implementation](#_cdp-implementation_)
+* [Results](#_cdp-results_)
 ---
 
-## _CDP: Introduction_
+## _CDP Introduction_
 
 In this laboratory work were been implemented `Creational Design Patterns`. What is the purpose of such patterns?
 >These patterns are responsible for the convenient and safe creation of new objects or even entire families of objects
@@ -43,7 +43,7 @@ In this laboratory work were been implemented `Creational Design Patterns`. What
 
 ---
 
-## _CDP: Implementation_
+## _CDP Implementation_
 
 There was implemented the simulation of the `Store` to show how design patterns work. The main idea was that there will be the `Manager`, the only one, and he can manage some money and buy another equipment like `Fridge` or `Cupboard` (or Shelf, if you want) to store `Products`.
 
@@ -144,7 +144,7 @@ The example code of `Manager`:
         }
 ```
 
-## _CDP: Results_
+## _CDP Results_
 
 - ### Cupboard factory partial code
 ![image](https://user-images.githubusercontent.com/6358475/135914833-ebeca66e-f241-4e0f-98a6-4d04f0b4368e.png)
