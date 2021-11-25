@@ -1,11 +1,10 @@
-package workers;
+package person.workers;
 
 import tool.CashMachine;
 
 public class Cashier extends Worker {
 
-    public Cashier() {
-    }
+    public Cashier() {}
 
     public Cashier(String name) {
         super(name);
@@ -13,5 +12,10 @@ public class Cashier extends Worker {
 
     public Cashier(String name, CashMachine tool) {
         super(name, tool);
+    }
+
+    @Override
+    public void work(){
+        System.out.println("Cashier works...");
     }
 }

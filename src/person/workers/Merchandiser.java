@@ -1,11 +1,10 @@
-package workers;
+package person.workers;
 
 import tool.Scanner;
 
 public class Merchandiser extends Worker{
 
-    public Merchandiser() {
-    }
+    public Merchandiser() {}
 
     public Merchandiser(String name) {
         super(name);
@@ -13,5 +12,10 @@ public class Merchandiser extends Worker{
 
     public Merchandiser(String name, Scanner tool) {
         super(name, tool);
+    }
+
+    @Override
+    public void work(){
+        System.out.println("Merchandiser works...");
     }
 }

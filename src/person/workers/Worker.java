@@ -1,4 +1,4 @@
-package workers;
+package person.workers;
 
 import tool.Tool;
 
@@ -31,4 +31,6 @@ public abstract class Worker {
     public void setName(String name) {
         this.name = name;
     }
+
+    public abstract void work();
 }
