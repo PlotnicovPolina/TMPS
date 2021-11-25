@@ -307,16 +307,16 @@ public class Facade {
 ## _SDP Results_
 
 - ### Facade full code
-![image](https://user-images.githubusercontent.com/6358475/135914833-ebeca66e-f241-4e0f-98a6-4d04f0b4368e.png)
+![facade](https://user-images.githubusercontent.com/70892671/143431337-0ee2aaea-68d6-40f9-9d77-e3747672a70b.PNG)
 
 - ### CashierAdapter full code
-![image](https://user-images.githubusercontent.com/6358475/135914956-bb6ccaec-5e69-411d-b68d-2a3c94ae1f10.png)
+![cashieradapter](https://user-images.githubusercontent.com/70892671/143431483-b6e10889-412a-4467-b3c3-b101a1d104cd.PNG)
 
 - ### Worker full code 
-![image](https://user-images.githubusercontent.com/6358475/135915112-6f4c9e5a-38cd-441d-9887-38dd35a05871.png)
+![worker](https://user-images.githubusercontent.com/70892671/143431703-b9a6e922-33fb-472a-9539-0e7469c0726b.PNG)
 
 - ### Scanner full code
-![image](https://user-images.githubusercontent.com/6358475/135915228-d3fa93e9-096f-4a4a-9318-eee80151ace0.png)
+![scanner](https://user-images.githubusercontent.com/70892671/143431878-fcb4cc17-2b81-4b39-aea3-89c48b85fba5.PNG)
 
 - ### The output
-![image](https://user-images.githubusercontent.com/6358475/135915723-042cf3a9-bce6-4e47-9ad3-07b881c0ac30.png)
+![output](https://user-images.githubusercontent.com/70892671/143432021-4c79d928-c3a6-4360-be84-f3dc6883b932.PNG)
