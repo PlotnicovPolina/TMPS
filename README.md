@@ -11,9 +11,9 @@
 
 ---
 ## Table of contents:
-* [Introduction](#_cdp-introduction_)
-* [Implementation](#_cdp-implementation_)
-* [Results](#_cdp-results_)
+* [Introduction](#_cdp:-introduction_)
+* [Implementation](#_cdp:-implementation_)
+* [Results](#_cdp:-results_)
 ---
 
 ## _CDP: Introduction_
