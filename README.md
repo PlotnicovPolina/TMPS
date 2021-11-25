@@ -190,7 +190,7 @@ In this laboratory work were been implemented `Structural Design Patterns`. What
 * ### 3) Facade
 
 >A Facade is a structural design pattern that provides a simple interface to a complex class system, library, or framework.
-![Facade](https://refactoring.guru/images/patterns/diagrams/factory-method/solution1.png)
+![Facade](https://refactoring.guru/images/patterns/diagrams/facade/example.png)
 
 ---
 
