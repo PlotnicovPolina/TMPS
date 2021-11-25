@@ -11,9 +11,9 @@
 
 ---
 ## Table of contents:
-* [Introduction](#_cdp-introduction_)
-* [Implementation](#_cdp-implementation_)
-* [Results](#_cdp-results_)
+* [Introduction](#cdp-introduction)
+* [Implementation](#cdp-implementation)
+* [Results](#cdp-results)
 ---
 
 ## _CDP Introduction_
@@ -166,12 +166,12 @@ The example code of `Manager`:
 
 ---
 ## Table of contents:
-* [Introduction](#_sdp-introduction_)
-* [Implementation](#_sdp-implementation_)
-* [Results](#_sdp-results_)
+* [Introduction](#sdp-introduction)
+* [Implementation](#sdp-implementation)
+* [Results](#sdp-results)
 ---
 
-## _SDP: Introduction_
+## _SDP Introduction_
 
 In this laboratory work were been implemented `Structural Design Patterns`. What is the purpose of such patterns?
 >Scructural Design Patterns are responsible for building maintainable class hierarchies
@@ -194,7 +194,7 @@ In this laboratory work were been implemented `Structural Design Patterns`. What
 
 ---
 
-## _SDP: Implementation_
+## _SDP Implementation_
 
 The main idea was that there will be three adapters for every worker. (Adapter)
 
@@ -304,7 +304,7 @@ public class Facade {
 ```
 
 
-## _SDP: Results_
+## _SDP Results_
 
 - ### Facade full code
 ![image](https://user-images.githubusercontent.com/6358475/135914833-ebeca66e-f241-4e0f-98a6-4d04f0b4368e.png)
