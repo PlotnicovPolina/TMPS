@@ -20,4 +20,9 @@ public class AccountantAdapter extends Worker {
     public void action(){
         accountant.action();
     }
+
+    @Override
+    public void notifyManager(int priority, String message) {
+        accountant.notifyManager(priority,message);
+    }
 }

@@ -19,4 +19,9 @@ public class MerchandiserAdapter extends Worker {
     public void action(){
         merchandiser.action();
     }
+
+    @Override
+    public void notifyManager(int priority, String message) {
+        merchandiser.notifyManager(priority,message);
+    }
 }

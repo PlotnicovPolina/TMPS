@@ -33,4 +33,6 @@ public abstract class Worker {
     }
 
     public abstract void work();
+
+    public abstract void notifyManager(int priority, String message);
 }

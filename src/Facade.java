@@ -40,6 +40,10 @@ public class Facade {
         merchandiser.action();
     }
 
+    public void cashierNotify(int priority, String message){
+        cashier.notifyManager(priority,message);
+    }
+
     public static String randomName() {
         return names[(int) (Math.random()* (names.length-1))];
     }

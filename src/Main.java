@@ -1,6 +1,9 @@
 import factory.Factory;
 import factory.Manager;
+import factory.Notifier;
+import factory.RoutineReport;
 import product.ProductType;
+import worker.Cashier;
 
 public class Main {
 
@@ -51,6 +54,9 @@ public class Main {
         facade.accountantWorks();
         facade.cashierWorks();
         facade.merchandiserWorks();
+        facade.cashierNotify(1,"List of products sold");
+        facade.cashierNotify(2, "Problem with client");
+        facade.cashierNotify(3, "Fire");
 
     }
 }
